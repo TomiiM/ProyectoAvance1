@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Inicio RhamPage</title>
+    <!--Agrega CSS-->
+    <link rel="stylesheet" href="css/style.css">
+    <!--Agrega Bootstrap-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!--FONT AWESOME-->
+    <script src="https://kit.fontawesome.com/3fe5d540fe.js"></script>
+</head>
+
+<body id="cuerpo">
+  
+  <div class="container">
+    <header>
+      <!-- Version1   -->
+      <div class="">
+            <div class="vertical-menu fixed-top">
+              <!---->
+              <ul>
+                <li>
+                    <a href="#" class="active navbar-brand border-bottom">RhamPage</a></li>
+                    
+                <li>
+                    <a href="multimedia.html" id="multimedia" onclick="recargar()">Multimedia</a></li>
+                <li>
+                    <a href="paginas.html">Páginas</a></li>
+                <li>
+                    <a href="posts.html">Posts</a></li>
+                <li>
+                    <a href="comentarios.html">Comentarios</a></li>
+                <li>
+                    <a href="plantillas.html">Plantillas</a></li>
+                <li>
+                    <a href="seguridad.html">Seguridad</a></li>
+                <li>
+                    <a href="usuarios.html">Usuarios y Roles</a></li>
+              </ul>
+
+            </div>
+        </div>
+        <div class="">
+          
+          <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="na">
+            <a class="navbar-brand" href="#">Rhampage</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+                      
+            <div class="collapse navbar-collapse form-inline" id="navbarSupportedContent">
+              <ul class="nav navbar-nav  mr-auto ">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Administrador <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#"><i class="fas fa-sliders-h"></i></a>
+                </li>
+
+                 
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <i class="far fa-user"></i>
+                  </a>
+                  
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </div>
+                  
+                </li> 
+              </ul>
+            </div>
+          </nav>
+          
+        </div>      
+      </header>
+      <section>
+        <!--Inicio del Breadcrumb-->
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="#">Home</a></li>
+              <li class="breadcrumb-item"><a href="#">Library</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Data</li>
+            </ol>
+          </nav>
+        <!--Final del Breadcrumb-->
+      </section>
+      <section>
+          
+          <div id="recargarSeccion" class="">
+              <div class="container">
+                  <div class="row">
+                      <div class="form col-sm-12 col-md-6 col-lg-4">
+                              <i class="far fa-image fa-8x"></i> <br>
+                              <label for="">Subir Imagen</label>
+                      </div>
+                      <div class="form col-sm-12 col-md-6 col-lg-4">
+                              <i class="fas fa-video fa-8x"></i> <br>
+                              <label for="">Subir Video</label>
+                      </div>
+                      <div class="form col-sm-12 col-md-6 col-lg-4">
+                          <i class="fas fa-file-upload fa-8x" ></i> <br>
+                          <label for="">Subir archivo externo</label>
+  
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </section>
+  </div>
+  <script src="js/controlador.js"></script>
+
+  <!--Agrega el JQuery-->
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+  integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+  crossorigin="anonymous"></script>
+  <!-- Popper.JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"
+  integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
+  crossorigin="anonymous"></script>
+  <!-- Bootstrap JS -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
+  integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+  crossorigin="anonymous"></script>
+</body>
+
+</html>

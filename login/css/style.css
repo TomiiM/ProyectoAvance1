@@ -1,0 +1,70 @@
+#centro{
+    margin-top: 130px;
+    margin-left: auto;
+    margin-right: auto;
+    
+    background-color:rgba(0, 75, 158, 0.8);
+    
+
+    width: 30%;
+    height: 350px;
+
+    border-radius: 19px 19px 19px 19px;
+    -moz-border-radius: 19px 19px 19px 19px;
+    -webkit-border-radius: 19px 19px 19px 19px;
+    border: 0px solid #000000;
+
+    -webkit-box-shadow: 10px 12px 18px -9px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 12px 18px -9px rgba(0,0,0,0.75);
+    box-shadow: 10px 12px 18px -9px rgba(0,0,0,0.75);
+}
+
+#titulo{
+    margin-top: 40px;
+    margin-left: 70px;
+    padding-top: 40px;
+    color: white;
+    font-weight: bolder;
+}
+
+.form-control{
+    margin-left: auto;
+    margin-right: auto;
+
+    width: 250px !important;
+
+    -webkit-box-shadow: 10px 10px 18px -9px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 18px -9px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 18px -9px rgba(0,0,0,0.75);
+}
+
+#acceder{
+    background-color: #717377;
+    border: 0px;
+    color: white;
+    font-weight: bold;
+}
+
+.cuerpo{
+    
+    background-image: url('../img/f6.jpg');
+
+    
+}
+
+/*FAMILIAS DE FUENTES DE LETRA*/
+@font-face{
+font-family: 'Crimson Text', serif;
+font-family: 'Dancing Script', cursive;
+font-family: 'Cinzel', serif;
+font-family: 'Courgette', cursive;
+font-family: 'Alegreya', serif;
+font-family: 'Cookie', cursive;
+font-family: 'Playfair Display SC', serif;
+font-family: 'Handlee', cursive;
+font-family: 'Rock Salt', cursive;
+font-family: 'Cinzel Decorative', cursive;
+font-family: 'Bubblegum Sans', cursive;
+font-family: 'Emilys Candy', cursive;
+font-family: 'Cormorant Infant', serif;
+}

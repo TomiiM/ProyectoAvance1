@@ -1,0 +1,48 @@
+#jumbotron-landing{
+    color: white;
+    background-image: url('../imagenes/fondo5.jpg');
+    
+}
+#logo{
+        margin-left: 40%;
+    }
+
+body{
+    color:black;
+    background-color: white
+ /*   background-image: url('../imagenes/fprueba.jpg');*/
+}
+
+#subtitulo2{
+    left: 0px;
+    opacity: 0.80;
+    background-color: #717377;
+}
+
+#icono{
+    color: #004B9E;
+}
+
+.row h1,h3,h5{
+    text-align: center;
+}
+
+h6{
+    text-align: center !important;
+    color:  #004B9E;
+}
+
+#boton-Descarga{
+    height: 50px;
+    width: 400px;
+    margin-left: 350px;
+    color: white;
+    
+
+}
+
+#fondo-div{
+    opacity: 0.80;
+    background-color: #717377;
+}
+
