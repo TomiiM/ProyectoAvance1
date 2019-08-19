@@ -23,31 +23,31 @@
             <div class="vertical-menu fixed-top">
               <!---->
               <ul>
-                <li>
-                    <a href="#" class="active navbar-brand border-bottom">RhamPage</a></li>
-                    
-                <li>
-                    <a href="multimedia.html" id="multimedia" onclick="recargar()">Multimedia</a></li>
-                <li>
-                    <a href="paginas.html">Páginas</a></li>
-                <li>
-                    <a href="posts.html">Posts</a></li>
-                <li>
-                    <a href="comentarios.html">Comentarios</a></li>
-                <li>
-                    <a href="plantillas.html">Plantillas</a></li>
-                <li>
-                    <a href="seguridad.html">Seguridad</a></li>
-                <li>
-                    <a href="usuarios.html">Usuarios y Roles</a></li>
-              </ul>
+                  <li>
+                      <a href="#" class="active navbar-brand border-bottom">RhamPage</a></li>
+                      
+                  <li>
+                      
+                      <a  href="multimedia.html" class="textoSidebar" id="multimedia"  onclick="recargar()"><i class="fas fa-photo-video"></i> Multimedia</a></li>
+                  <li>
+                      <a href="paginas.html" class="textoSidebar"><i class="fas fa-file"></i> Páginas</a></li>
+                  <li>
+                      <a href="posts.html" class="textoSidebar"><i class="fas fa-sticky-note"></i> Posts</a></li>
+                  <li>
+                      <a href="comentarios.html" class="textoSidebar"><i class="fas fa-comments"></i> Comentarios</a></li>
+                  <li>
+                      <a href="plantillas.html" class="textoSidebar"><i class="fas fa-puzzle-piece"></i> Plantillas</a></li>
+                  <li>
+                      <a href="usuarios.html" class="textoSidebar"><i class="fas fa-users"></i> Usuarios</a></li>
+                </ul>
 
             </div>
         </div>
         <div class="">
           
           <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="na">
-            <a class="navbar-brand" href="#">Rhampage</a>
+            <img src="img/logo8.png" alt="" id="logo-navbar">
+            <a class="navbar-brand" href="index.html">Rhampage</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
@@ -57,9 +57,7 @@
                 <li class="nav-item active">
                   <a class="nav-link" href="#">Administrador <span class="sr-only">(current)</span></a>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#"><i class="fas fa-sliders-h"></i></a>
-                </li>
+                
 
                  
                 <li class="nav-item dropdown">
@@ -68,10 +66,10 @@
                   </a>
                   
                   <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="#">Action</a>
-                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Usuario Admin</a>
+                    <a class="dropdown-item" href="#">Editar mi Perfil</a>
                     <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#">Something else here</a>
+                    <a class="dropdown-item" href="#">Cerrar Sesión</a>
                   </div>
                   
                 </li> 
@@ -92,9 +90,9 @@
         <!--Inicio del Breadcrumb-->
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
-              <li class="breadcrumb-item"><a href="#">Home</a></li>
-              <li class="breadcrumb-item"><a href="#">Library</a></li>
-              <li class="breadcrumb-item active" aria-current="page">Data</li>
+              <li class="breadcrumb-item"><a href="#">Inicio</a></li>
+              <li class="breadcrumb-item"><a href="#">Comentarios</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Editar</li>
             </ol>
           </nav>
         <!--Final del Breadcrumb-->
@@ -102,11 +100,62 @@
       <section>
           
           <div id="recargarSeccion" class="">
-              <div class="container">
-                  <div class="row">
-                      <h1>comentarios</h1>
-                  </div>
-              </div>
+                    <!--Inicio de tabla que muestra los usuarios agregados-->
+      <div class="container">
+          <div class="row">
+            <div class="container-fluid tablaEstatica">
+              <table class="table  table-bordered ">
+  
+                <thead >
+                  <tr>
+                    <th scope="col">Comentario</th>
+                    <th scope="col">Usuario que publicó</th>
+                    <th scope="col">Fecha de Publicación</th>
+                    <th scope="col">Opciones</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">Hola Mundo</th>
+                    <td>Jimin Maradiaga</td>
+                    <td>15/03/19</td>
+                    <td>
+                      <div class="row" id="modificarComentario">
+                        <button class="btn"><i class="fas fa-check-square"></i></button>
+                        <button class="btn"><i class="fas fa-trash"></i></button>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Excelente publicación</th>
+                    <td>Jimin Maradiaga</td>
+                    <td>15/03/19</td>
+                    <td>
+                      <div class="row" id="modificarComentario">
+                        <button class="btn"><i class="fas fa-check-square"></i></button>
+                        <button class="btn"><i class="fas fa-trash"></i></button>
+                      </div>
+                    </td>
+                  </tr>
+                    <tr>
+                      <th scope="row">Por fin lo entendí</th>
+                      <td>Jesús Alcerro</td>
+                      <td>12/05/19</td>
+                      <td>
+                        <div class="row" id="modificarComentario">
+                          <button class="btn"><i class="fas fa-check-square"></i></button>
+                          <button class="btn"><i class="fas fa-trash"></i></button>
+                        </div>
+                      </td>
+                    </tr>
+                  
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        
+        <!--Final de tabla que muestra los usuarios agregados-->
           </div>
       </section>
   </div>

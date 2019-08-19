@@ -23,31 +23,31 @@
             <div class="vertical-menu fixed-top">
               <!---->
               <ul>
-                <li>
-                    <a href="#" class="active navbar-brand border-bottom">RhamPage</a></li>
-                    
-                <li>
-                    <a href="multimedia.html" id="multimedia" onclick="recargar()">Multimedia</a></li>
-                <li>
-                    <a href="paginas.html">Páginas</a></li>
-                <li>
-                    <a href="posts.html">Posts</a></li>
-                <li>
-                    <a href="comentarios.html">Comentarios</a></li>
-                <li>
-                    <a href="plantillas.html">Plantillas</a></li>
-                <li>
-                    <a href="seguridad.html">Seguridad</a></li>
-                <li>
-                    <a href="usuarios.html">Usuarios y Roles</a></li>
-              </ul>
+                  <li>
+                      <a href="#" class="active navbar-brand border-bottom">RhamPage</a></li>
+                      
+                  <li>
+                      
+                      <a  href="multimedia.html" class="textoSidebar" id="multimedia"  onclick="recargar()"><i class="fas fa-photo-video"></i> Multimedia</a></li>
+                  <li>
+                      <a href="paginas.html" class="textoSidebar"><i class="fas fa-file"></i> Páginas</a></li>
+                  <li>
+                      <a href="posts.html" class="textoSidebar"><i class="fas fa-sticky-note"></i> Posts</a></li>
+                  <li>
+                      <a href="comentarios.html" class="textoSidebar"><i class="fas fa-comments"></i> Comentarios</a></li>
+                  <li>
+                      <a href="plantillas.html" class="textoSidebar"><i class="fas fa-puzzle-piece"></i> Plantillas</a></li>
+                  <li>
+                      <a href="usuarios.html" class="textoSidebar"><i class="fas fa-users"></i> Usuarios</a></li>
+                </ul>
 
             </div>
         </div>
         <div class="">
           
           <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="na">
-            <a class="navbar-brand" href="#">Rhampage</a>
+              <img src="img/logo8.png" alt="" id="logo-navbar">
+            <a class="navbar-brand" href="index.html">Rhampage</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
@@ -57,9 +57,7 @@
                 <li class="nav-item active">
                   <a class="nav-link" href="#">Administrador <span class="sr-only">(current)</span></a>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#"><i class="fas fa-sliders-h"></i></a>
-                </li>
+               
 
                  
                 <li class="nav-item dropdown">
@@ -68,10 +66,10 @@
                   </a>
                   
                   <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="#">Action</a>
-                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Usuario Admin</a>
+                    <a class="dropdown-item" href="#">Editar mi Perfil</a>
                     <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#">Something else here</a>
+                    <a class="dropdown-item" href="#">Cerrar Sesión</a>
                   </div>
                   
                 </li> 
@@ -100,28 +98,97 @@
         <!--Final del Breadcrumb-->
       </section>
       <section>
-          
           <div id="recargarSeccion" class="">
-              <div class="container">
-                  <div class="row">
-                      <div class="form col-sm-12 col-md-6 col-lg-4">
-                              <i class="far fa-image fa-8x"></i> <br>
-                              <label for="">Subir Imagen</label>
+                <div class="container-fluid">
+                    <div class=" row">
+                      <div class="subirArchivo">
+                        <button type="button" class="btn " data-toggle="modal" data-target="#exampleModalScrollable">
+                            <i class="iconoS fas fa-upload fa-3x"></i>
+                            <h6>Subir Archivo</h6>  
+                        </button>
+                      
                       </div>
-                      <div class="form col-sm-12 col-md-6 col-lg-4">
-                              <i class="fas fa-video fa-8x"></i> <br>
-                              <label for="">Subir Video</label>
+                      <div class="subirArchivo">
+                        <button type="button" class="btn " data-toggle="modal" data-target="#exampleModalScrollable2">
+                          <i class="iconoS fas fa-folder-plus fa-3x"></i>
+                          <h6>Agregar Carpeta</h6>
+                        </button>
                       </div>
-                      <div class="form col-sm-12 col-md-6 col-lg-4">
-                          <i class="fas fa-file-upload fa-8x" ></i> <br>
-                          <label for="">Subir archivo externo</label>
-  
-                      </div>
-                  </div>
-              </div>
-          </div>
+                      
+                </div>
+            </div>
       </section>
-  </div>
+    </div>
+
+    <!--INICIO DE MODAL-->
+        <!-- Button trigger modal -->
+    
+      
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModalScrollable" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+                <i class="fas fa-plus-square fa-2x"></i>
+              <h5 class="modal-title" id="tituloModal1Multimedia"> Subir Archivo Multimedia</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body" id="agregarMultimedia">
+              <div class="container"> 
+                <div class="row ">  
+                  <div class="objetos col-md-4 col-sm-6 ">
+                    <i class="far fa-image fa-5x" ></i> <br>
+                    <label for="" >Subir Imagen</label>
+                  </div>
+                  <div class="objetos col-md-4 col-sm-6 ">
+                    <i class="fas fa-video fa-5x"></i> <br>
+                    <label for="">Subir Video</label>    
+                  </div >
+                  <div class="objetos col-md-4 col-sm-6 ">
+                    <i class="fas fa-file-upload fa-5x" ></i> <br>
+                    <label for="">Subir archivo externo</label>
+                  </div>
+                </div>
+              </div>
+                                             
+                            
+                            
+                    
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary boton-Estandar" data-dismiss="modal">Cerrar</button>
+              <button type="button" class="btn btn-primary boton-Estandar">Guardar Cambios</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!--FINAL DE MODAL-->
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModalScrollable2" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <i class="far fa-folder fa-2x " ></i>
+                  <h5 class="modal-title" id="tituloModal2Multimedia">Subir Carpeta Multimedia</h5>
+                  
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  
+                  <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary boton-Estandar" data-dismiss="modal">Cerrar</button>
+                  <button type="button" class="btn btn-primary boton-Estandar">Guardar Cambios</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        <!--FINAL DE MODAL-->
   <script src="js/controlador.js"></script>
 
   <!--Agrega el JQuery-->

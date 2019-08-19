@@ -23,30 +23,30 @@
             <div class="vertical-menu fixed-top">
               <!---->
               <ul>
-                <li>
-                    <a href="#" class="active navbar-brand border-bottom">RhamPage</a></li>
-                    
-                <li>
-                    <a href="multimedia.html" id="multimedia" onclick="recargar()">Multimedia</a></li>
-                <li>
-                    <a href="paginas.html">Páginas</a></li>
-                <li>
-                    <a href="posts.html">Posts</a></li>
-                <li>
-                    <a href="comentarios.html">Comentarios</a></li>
-                <li>
-                    <a href="plantillas.html">Plantillas</a></li>
-                <li>
-                    <a href="seguridad.html">Seguridad</a></li>
-                <li>
-                    <a href="usuarios.html">Usuarios y Roles</a></li>
-              </ul>
+                  <li>
+                      <a href="#" class="active navbar-brand border-bottom">RhamPage</a></li>
+                      
+                  <li>
+                      
+                      <a  href="multimedia.html" class="textoSidebar" id="multimedia"  onclick="recargar()"><i class="fas fa-photo-video"></i> Multimedia</a></li>
+                  <li>
+                      <a href="paginas.html" class="textoSidebar"><i class="fas fa-file"></i> Páginas</a></li>
+                  <li>
+                      <a href="posts.html" class="textoSidebar"><i class="fas fa-sticky-note"></i> Posts</a></li>
+                  <li>
+                      <a href="comentarios.html" class="textoSidebar"><i class="fas fa-comments"></i> Comentarios</a></li>
+                  <li>
+                      <a href="plantillas.html" class="textoSidebar"><i class="fas fa-puzzle-piece"></i> Plantillas</a></li>
+                  <li>
+                      <a href="usuarios.html" class="textoSidebar"><i class="fas fa-users"></i> Usuarios</a></li>
+                </ul>
 
             </div>
         </div>
         <div class="">
           
           <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="na">
+            <img src="img/logo8.png" alt="" id="logo-navbar">
             <a class="navbar-brand" href="#">Rhampage</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
@@ -57,21 +57,19 @@
                 <li class="nav-item active">
                   <a class="nav-link" href="#">Administrador <span class="sr-only">(current)</span></a>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#"><i class="fas fa-sliders-h"></i></a>
-                </li>
+                
 
                  
                 <li class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    <i class="far fa-user"></i>
+                    <i class="far fa-user" ></i>
                   </a>
                   
                   <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="#">Action</a>
-                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Usuario Admin</a>
+                    <a class="dropdown-item" href="#">Editar mi Perfil</a>
                     <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#">Something else here</a>
+                    <a class="dropdown-item" href="#">Cerrar Sesión</a>
                   </div>
                   
                 </li> 
@@ -92,23 +90,173 @@
         <!--Inicio del Breadcrumb-->
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
-              <li class="breadcrumb-item"><a href="#">Home</a></li>
-              <li class="breadcrumb-item"><a href="#">Library</a></li>
-              <li class="breadcrumb-item active" aria-current="page">Data</li>
+              <li class="breadcrumb-item"><a href="#">Inicio</a></li>
+              <li class="breadcrumb-item"><a href="#">Posts</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Editar</li>
             </ol>
           </nav>
         <!--Final del Breadcrumb-->
       </section>
       <section>
+        <div class="row">
+          <div class="subirArchivo">
+            <button type="button" class="btn " id="" data-toggle="modal" data-target="#ModalPost">
+              <i class="fas fa-clipboard fa-3x"></i>  
+              <h6>Añadir nuevo Post</h6>
+            </button>
+          </div>
+          <div class="subirArchivo">
+            <button type="button" class="btn " id="" data-toggle="modal" data-target="#ModalCategoria">
+              <i class="fas fa-archive fa-3x"></i> 
+              <h6>Crear Categoría</h6>
+            </button>
+          </div>
+        </div>
           
+          <!--INICIO DE TABLA DE POSTS CREADOS-->
           <div id="recargarSeccion" class="">
               <div class="container">
                   <div class="row">
-                        <h1>posts</h1>
+                      <div class="container-fluid tablaEstatica">
+                          <table class="table table-bordered">
+                            <thead >
+                              <tr>
+                                <th scope="col">Título de Post</th>
+                                <th scope="col">Autor</th>
+                                <th scope="col">Fecha/Hora</th>
+                                <th scope="col">Contenido de Post</th>
+                                <th scope="col">Imagen Representativa</th>
+                                <th scope="col">Categoria</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <th scope="row">Vision Board</th>
+                                <td>Jesús Alcerro</td>
+                                <td>21/04/19 22:32</td>
+                                <td>Aquí va el contenido</td>
+                                <td>imagen de Post</td>
+                                <td>Categoria1</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">Tips de Estudio</th>
+                                <td>Jesús Alcerro</td>
+                                <td>01/01/15 22:12</td>
+                                <td>Aquí va el contenido</td>
+                                <td>Imagen de Post</td>
+                                <td>Categoria2</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">Viajes</th>
+                                <td>Olga Meza de Tosta</td>
+                                <td>11/10/18 12:10</td>
+                                <td>Aquí va el contenido</td>
+                                <td>Imagen de Post</td>
+                                <td>Categoria3</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
                   </div>
               </div>
           </div>
       </section>
+
+       <!--INICIO DE MODAL PARA CREAR POST-->
+        
+      <div class="modal fade" id="ModalPost" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                  <i class="fas fa-plus-square fa-2x"></i>
+                <h5 class="modal-title" id="tituloModal1Multimedia"> Subir Post</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body" id="agregarMultimedia">
+                  <form>
+                      <div class="form-group" id="ingresarPosts">
+                        <div class="col-md-4 mb-3">
+                          <input type="text" class="intro" placeholder=" Ingrese el título de su Post">
+                        </div>
+                        <div class="col-md-4 mb-3">
+                          <input type="text" class="intro" placeholder=" Ingrese el Contenido de su Post">
+                        </div>
+                        <div class="col-md-4 mb-3">
+                          <label for="">Suba su imagen</label>
+                          <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                        </div>
+                        <div class="col-md-4 mb-3">
+                          <input type="text" class="intro" placeholder=" Elija su Categoria">
+                        </div>
+                        <div class="col-md-4 mb-3">
+                          <input type="text" class="intro" placeholder=" Ingrese el URL">
+                        </div>
+                        <div class="col-md-4 mb-3">
+                  
+                          <div class="form-check" id="selecCategoriaPostNuevo">
+                            <select class="form-control intro" id="">
+                               <option>Elija la categoria</option>
+                               <option value="">Categoria1</option>
+                               <option value="">Categoria2</option>
+                            </select>
+                          </div>
+                          <label id="checkPost" for="">Comentarios</label>
+                          <div class="form-check">
+                            <input class="form-check-input " type="radio" name="exampleRadios" id="exampleRadios1" value="option1" >
+                            <label class="form-check-label" for="exampleRadios1">Habilitados</label><br>
+                            <input class="form-check-input " type="radio" name="exampleRadios" id="exampleRadios1" value="option2" >
+                            <label class="form-check-label" for="exampleRadios1">No disponibles</label>
+                          </div>
+                          
+                        </div>  
+                      </div>
+                    </form>             
+                      
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary boton-Estandar" data-dismiss="modal">Cerrar</button>
+                <button type="button" class="btn btn-primary boton-Estandar">Guardar Cambios</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      <!--FINAL DE MODAL POST-->
+      <!--INICIO DE MODAL PARA CREAR CATEGORIA-->
+        
+             <div class="modal fade" id="ModalCategoria" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                        <i class="fas fa-plus-square fa-2x"></i>
+                      <h5 class="modal-title" id="tituloModal1Multimedia"> Crear Categoría</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body" id="agregarMultimedia">
+                        <div class="col-md-4 mb-3">
+                            <input type="text" class="intro" placeholder=" Ingrese el título de la Categoría">
+                          </div>
+                          <div class="col-md-4 mb-3">
+                            <input type="text" class="intro" placeholder=" Ingrese una breve descripción de la Categoria">
+                          </div>
+                      </div>
+                                                     
+                                    
+                                    
+                            
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary boton-Estandar" data-dismiss="modal">Cerrar</button>
+                      <button type="button" class="btn btn-primary boton-Estandar">Guardar Cambios</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            <!--FINAL DE CATEGORIA-->
+      
   </div>
   <script src="js/controlador.js"></script>
 

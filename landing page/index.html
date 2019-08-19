@@ -13,37 +13,38 @@
 </head>
 <body>
     <!--JUMBOTRON-->
-    <div id="jumbotron-landing" class="jumbotron">
+    <div id="jumbotron-landing" class="jumbotron jumbotron-fluid">
         <div class="container">
-            <div class="row">
-                <!--LOGO-->
-                <div id="logo" class="col-xs-12 col-sm-10">
-                         
-                     <img src="imagenes/logo2.png" alt="">  <!-- <i id="icono" class="far fa-sticky-note fa-5x"></i>--> 
-                    <!--<i id="icono"class="fas fa-gem fa-5x"></i>  btn-sm-->
-                </div>          
-            </div>
             
             <div id="subtitulo" class="row">
-                <div id="subtitulo2" class="col-xs-12 col-lg-12">
-                    <h1> <strong>CREA EL BLOG QUE DESPLIEGUE TU EMPRESA</strong> </h1>
+                    
+                 <!--LOGO-->
+                 <div id="logo" class=" col-sm-12 col-lg-5">
+                        <img src="imagenes/logo8.png" alt=""> 
+                        <h1><b>RhamPage</b></h1> <br><br>
+                   </div>   
+                <div id="subtitulo2" class="col-sm-12 col-lg-6">
+                    <div id="iconos">
+                        <a href="" >
+                            <i class="fab fa-facebook-square fa-2x redes"></i>
+                        </a>
+                        <a href="" >
+                            <i class="fab fa-twitter-square fa-2x redes"></i>
+                        </a>
+                    </div>
+                    <div class="container" id="contenedorTexto">
+                        
+                        <h2> <strong>CREA EL BLOG QUE DESPLIEGUE TU EMPRESA</strong> </h2>
                     <h3> <strong>El creador de blogs por excelencia</strong> <br> </h3>
-                </div>                    
-                <div class="col-xs-12 col-lg-12">
-                    <h5> <br> Sé el primero en probar nuestros Servicios</h5>
-                    <button id="boton-Descarga" type="button" class="btn btn-primary ">
-                        Descargar Versión Portable
+                    <h5> <br> Sé el primero en probar nuestros Servicios</h5><br>
+                    
+                    </div>
+                    <button id="boton-Descarga" type="button" class="btn btn-primary " onclick="Redireccionar()">
+                        ¡Quiero probarlo!
                     </button>
-                </div>
+                </div>         
                  <!--LOGO SOCIAL MEDIA-->
-                 <div class="col-xs-12 col-sm-2">
-                        <a href="" style="color: white">
-                            <i class="fab fa-facebook-square fa-2x"></i>
-                        </a>
-                        <a href="" style="color:white">
-                                <i class="fab fa-twitter-square fa-2x"></i>
-                        </a>
-                    </div>     
+                     
             </div>
 
         </div>
@@ -81,5 +82,11 @@
 
     </div>
     <!--Fin de contenido-->
+
+     <!--Agrega el JS-->
+     <script src="js/controlador.js"></script>
+
+     <!--Agrega el JQuery-->
+     <script src="js/jquery-3.4.1.min.js"></script>
 </body>
 </html>

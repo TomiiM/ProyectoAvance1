@@ -1,13 +1,13 @@
 #centro{
-    margin-top: 130px;
+    margin-top: 50px;
     margin-left: auto;
     margin-right: auto;
     
     background-color:rgba(0, 75, 158, 0.8);
     
 
-    width: 30%;
-    height: 350px;
+    width: 450px;
+    height: 450px;
 
     border-radius: 19px 19px 19px 19px;
     -moz-border-radius: 19px 19px 19px 19px;
@@ -17,17 +17,26 @@
     -webkit-box-shadow: 10px 12px 18px -9px rgba(0,0,0,0.75);
     -moz-box-shadow: 10px 12px 18px -9px rgba(0,0,0,0.75);
     box-shadow: 10px 12px 18px -9px rgba(0,0,0,0.75);
+    display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-#titulo{
-    margin-top: 40px;
-    margin-left: 70px;
-    padding-top: 40px;
+
+.titulo{
+    margin-top: 0px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    /*margin-left: 70px;*/
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
     color: white;
     font-weight: bolder;
 }
 
-.form-control{
+.logearse{
     margin-left: auto;
     margin-right: auto;
 
@@ -39,32 +48,90 @@
 }
 
 #acceder{
+    background-color: #ff9e49;
+    border: 0px;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+#registrar{
     background-color: #717377;
     border: 0px;
     color: white;
     font-weight: bold;
+    margin-bottom: 10px;
+    margin-left: 300px;;
 }
 
 .cuerpo{
-    
-    background-image: url('../img/f6.jpg');
-
-    
+    background-image: url('../img/f9.jpg');
 }
 
-/*FAMILIAS DE FUENTES DE LETRA*/
-@font-face{
-font-family: 'Crimson Text', serif;
-font-family: 'Dancing Script', cursive;
-font-family: 'Cinzel', serif;
-font-family: 'Courgette', cursive;
-font-family: 'Alegreya', serif;
-font-family: 'Cookie', cursive;
-font-family: 'Playfair Display SC', serif;
-font-family: 'Handlee', cursive;
-font-family: 'Rock Salt', cursive;
-font-family: 'Cinzel Decorative', cursive;
-font-family: 'Bubblegum Sans', cursive;
-font-family: 'Emilys Candy', cursive;
-font-family: 'Cormorant Infant', serif;
+#segundo{
+    margin-top: 90px;
+    margin-left: auto;
+    margin-right: auto;
+    
+    background-color:rgba(0, 75, 158, 0.8);
+    margin-top: 10px;
+
+    width: 450px;
+    height: 40px;
+
+    border-radius: 8px 8px 8px 8px;
+    -moz-border-radius: 19px 19px 19px 19px;
+    -webkit-border-radius: 19px 19px 19px 19px;
+    border: 0px solid #000000;
+
+    -webkit-box-shadow: 10px 12px 18px -9px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 12px 18px -9px rgba(0,0,0,0.75);
+    box-shadow: 10px 12px 18px -9px rgba(0,0,0,0.75);
+
+    text-align: center;
+    color: white
+}
+#segundo a{
+    color: white;
+ /*    text-decoration: none !important;*/
+}
+
+#segundo p{
+    padding: 5px;
+}
+
+#logo{
+    width: 150px;
+    height: 150px;
+    margin-left: 130px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 0px;
+}
+
+#contiene{
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    
+    background-color:rgba(0, 75, 158, 0.8);
+    
+
+    width: 450px;
+    height: 520px;
+
+    border-radius: 19px 19px 19px 19px;
+    -moz-border-radius: 19px 19px 19px 19px;
+    -webkit-border-radius: 19px 19px 19px 19px;
+    border: 0px solid #000000;
+
+    -webkit-box-shadow: 10px 12px 18px -9px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 12px 18px -9px rgba(0,0,0,0.75);
+    box-shadow: 10px 12px 18px -9px rgba(0,0,0,0.75);
+}
+
+#contiene label{
+    color: white;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
 }

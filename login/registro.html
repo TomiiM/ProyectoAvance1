@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Registro Rhampage</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <!--Agrega Bootstrap-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+</head>
+<body class="cuerpo">
+    <div id="contiene" class="col-sm-12 col-lg-12">
+        <form class="needs-validation" novalidate>
+            <div class="form-row">
+                <div class="titulo">
+                    <h1 >Regístrate</h1>
+                    <h3>¡Sé parte de nuestro equipo!</h3>
+                </div>
+            
+              <div class="col-md-12">
+                <label for="validationCustom01">Nombre</label>
+                <input type="text" class="form-control" id="validationCustom01" placeholder="Ingrese su nombre"  required>
+                <div class="valid-feedback">
+                  Aceptado!
+                </div>
+              </div>
+              <div class="col-md-12">
+                <label for="validationCustom02">Apellidos</label>
+                <input type="text" class="form-control" id="validationCustom02" placeholder="Ingrese su apellido"  required>
+                <div class="valid-feedback">
+                  Luce bien!
+                </div>
+              </div>
+              <div class="col-md-12">
+                <label for="validationCustomUsername">Usuario</label>
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text" id="inputGroupPrepend">@</span>
+                  </div>
+                  <input type="text" class="form-control" id="validationCustomUsername" placeholder="Usuario" aria-describedby="inputGroupPrepend" required>
+                  <div class="invalid-feedback">
+                   Por favor elija un usuario válido.
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-12">
+                <label for="validationCustom02">Correo electrónico</label>
+                <input type="text" class="form-control" id="validationCustom02" placeholder="Ingrese su correo electrónico" value="" required>
+                <div class="valid-feedback">
+                  Luce bien!
+                </div>
+              </div>
+              
+              
+            </div>
+            <div class="form-row">
+              <div class="col-md-6 mb-3">
+                <label for="validationCustom03">Contraseña</label>
+                <input type="text" class="form-control" id="validationCustom03" placeholder="Ingrese su contraseña" required>
+                <div class="invalid-feedback">
+                  Contraseña vacía
+                </div>
+              </div>
+            </div>
+            
+
+            <div class="form-group">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                <label class="form-check-label" for="invalidCheck">
+                  Acepto los términos y condiciones
+                </label>
+                <div class="invalid-feedback">
+                  Debe aceptar los términos y condiciones para poder continuar
+                </div>
+              </div>
+            </div>
+            <button class="btn btn-primary" id="registrar" type="submit" >Registrarse</button>
+          </form>
+          
+          
+    </div>   
+</body>
+</html>

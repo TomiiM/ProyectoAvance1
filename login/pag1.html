@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Login Rhampage</title>
 
     <link rel="stylesheet" href="css/style.css">
     <!--Agrega Bootstrap-->
@@ -13,10 +13,22 @@
 <body class="cuerpo">
 
     <div  id="centro">
-        <h1 id="titulo">Inicia Sesión</h1> <br>
-        <input class="form-control" type="text" name="" id="" placeholder="Ingresa tu correo"> <br>
-        <input class="form-control" type="text" name="" id="" placeholder="Ingresa tu contraseña"> <br>
-        <button class="form-control" id="acceder">Acceder</button>
+        <div class="container-fluid col-sm-12 col-lg-12">
+            <img src="img/logo8.png" id="logo" alt="">
+            <h1 id="" class="form-text titulo">Inicia Sesión</h1> <br>
+            <input class="form-control logearse" type="text" name="" id="usuario" placeholder="Ingresa tu correo"> <br>
+            <input class="form-control logearse" type="password" name="" id="clave" placeholder="Ingresa tu contraseña"> <br>
+            <button class="form-control logearse" id="acceder" onclick="verificar()">Acceder</button>
+        </div>    
+    </div> 
+    <div id="segundo" class="container-fluid col-sm-12 col-lg-12">
+        <p>¿No tienes una cuenta? <a href="registro.html">Regístrate</a></p> 
     </div>
+
+    <!--Agrega el JS-->
+    <script src="js/controlador.js"></script>
+
+    <!--Agrega el JQuery-->
+    <script src="js/jquery-3.4.1.min.js"></script>
 </body>
 </html>

@@ -1,12 +1,30 @@
 #jumbotron-landing{
     color: white;
-    background-image: url('../imagenes/fondo5.jpg');
-    
+    background-image: url('../imagenes/f1.jpg');
+    height: 800px;;
 }
 #logo{
-        margin-left: 40%;
+        /*margin-left: 40%;*/
+        height: 550px;
+        width: 400px;
+        padding: 5px;
+        margin-right: 10px;
+        margin-bottom: 5px;
+        clear: both;
+        float: left;
+        position: relative;
+        background-color: rgba(0, 75, 158, 0.8);
+        
     }
-
+#logo img{
+    margin-top: 10px;
+    margin-left: 70px;
+    width: 300px;
+}
+#contenedorTexto{
+    padding-top: 10px;
+    margin-top: 80px;
+}
 body{
     color:black;
     background-color: white
@@ -14,16 +32,26 @@ body{
 }
 
 #subtitulo2{
-    left: 0px;
-    opacity: 0.80;
-    background-color: #717377;
+    width: 300px !important;
+    background-color: rgba(0, 75, 158, 0.8);
+}
+.redes{
+    color: white !important;
+    margin-left: 95%;
 }
 
 #icono{
     color: #004B9E;
 }
 
-.row h1,h3,h5{
+h1{
+    text-align: center;
+    margin-left: 0px;
+    font-size: 80px;
+    
+    width: 500px;
+}
+.row h2,h3,h5{
     text-align: center;
 }
 
@@ -32,17 +60,19 @@ h6{
     color:  #004B9E;
 }
 
+
+
 #boton-Descarga{
-    height: 50px;
-    width: 400px;
-    margin-left: 350px;
-    color: white;
-    
+    background-color: #ff9e49 !important;
+    border: #b76717 !important;
+    margin-left: 20px;
+    width: 500px;
+  }
+  
+  #boton-Descarga:hover{
+    background-color: #693d10 !important;
+    border: #693d10 !important;
+  }
 
-}
 
-#fondo-div{
-    opacity: 0.80;
-    background-color: #717377;
-}
 

@@ -23,31 +23,31 @@
             <div class="vertical-menu fixed-top">
               <!---->
               <ul>
-                <li>
-                    <a href="#" class="active navbar-brand border-bottom">RhamPage</a></li>
-                    
-                <li>
-                    <a href="multimedia.html" id="multimedia" onclick="recargar()">Multimedia</a></li>
-                <li>
-                    <a href="paginas.html">Páginas</a></li>
-                <li>
-                    <a href="posts.html">Posts</a></li>
-                <li>
-                    <a href="comentarios.html">Comentarios</a></li>
-                <li>
-                    <a href="plantillas.html">Plantillas</a></li>
-                <li>
-                    <a href="seguridad.html">Seguridad</a></li>
-                <li>
-                    <a href="usuarios.html">Usuarios y Roles</a></li>
-              </ul>
+                  <li>
+                      <a href="#" class="active navbar-brand border-bottom">RhamPage</a></li>
+                      
+                  <li>
+                      
+                      <a  href="multimedia.html" class="textoSidebar" id="multimedia"  onclick="recargar()"><i class="fas fa-photo-video"></i> Multimedia</a></li>
+                  <li>
+                      <a href="paginas.html" class="textoSidebar"><i class="fas fa-file"></i> Páginas</a></li>
+                  <li>
+                      <a href="posts.html" class="textoSidebar"><i class="fas fa-sticky-note"></i> Posts</a></li>
+                  <li>
+                      <a href="comentarios.html" class="textoSidebar"><i class="fas fa-comments"></i> Comentarios</a></li>
+                  <li>
+                      <a href="plantillas.html" class="textoSidebar"><i class="fas fa-puzzle-piece"></i> Plantillas</a></li>
+                  <li>
+                      <a href="usuarios.html" class="textoSidebar"><i class="fas fa-users"></i> Usuarios</a></li>
+                </ul>
 
             </div>
         </div>
         <div class="">
           
           <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="na">
-            <a class="navbar-brand" href="#">Rhampage</a>
+              <img src="img/logo8.png" alt="" id="logo-navbar">
+            <a class="navbar-brand" href="index.html">Rhampage</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
@@ -57,9 +57,7 @@
                 <li class="nav-item active">
                   <a class="nav-link" href="#">Administrador <span class="sr-only">(current)</span></a>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#"><i class="fas fa-sliders-h"></i></a>
-                </li>
+               
 
                  
                 <li class="nav-item dropdown">
@@ -68,10 +66,10 @@
                   </a>
                   
                   <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="#">Action</a>
-                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Usuario Admin</a>
+                    <a class="dropdown-item" href="#">Editar mi Perfil</a>
                     <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#">Something else here</a>
+                    <a class="dropdown-item" href="#">Cerrar Sesión</a>
                   </div>
                   
                 </li> 
@@ -82,8 +80,8 @@
         </div>      
       </header>
       <section>
-            <div >
-                <nav>
+            <div class="row">
+                <nav class="nav nav-bar">
                       <h3 class="font-weight-bolder">Usuarios y Roles</h3>
                 </nav>
             </div>
@@ -92,24 +90,211 @@
         <!--Inicio del Breadcrumb-->
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
-              <li class="breadcrumb-item"><a href="#">Home</a></li>
-              <li class="breadcrumb-item"><a href="#">Library</a></li>
-              <li class="breadcrumb-item active" aria-current="page">Data</li>
+              <li class="breadcrumb-item"><a href="#">Inicio</a></li>
+              <li class="breadcrumb-item"><a href="#">Usuarios</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Editar</li>
             </ol>
           </nav>
         <!--Final del Breadcrumb-->
       </section>
       <section>
-          
-          <div id="recargarSeccion" class="">
-              <div class="container">
-                  <div class="row">
-                      <h1>USUARIOS</h1>
-                  </div>
-              </div>
+        <div class="row">
+          <div class=" subirArchivo" >
+            <button type="button" class="btn boton-Estandar"  data-toggle="modal" data-target="#exampleModalScrollable">
+              <i class=" fas fa-user-plus fa-2x iconito"></i> 
+              <h6>Añadir nuevo Usuario</h6>
+            </button>
           </div>
+          <div class="subirArchivo ">
+            <button type="button" class="btn boton-Estandar"  data-toggle="modal" data-target="#ModalRol">
+              <i class="fas fa-award fa-2x iconito"></i>
+              <h6>Añadir nuevo Rol</h6>    
+            </button>
+          </div>
+          
+       
+        
+        </div>
       </section>
+      <!--Inicio del Modal Agregar Usuario-->
+      <section>
+        <div class="modal fade" id="exampleModalScrollable" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalScrollableTitle">Crear nuevo Usuario</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+          
+
+
+                <form class="needs-validation" novalidate>
+                  <div class="form-row">
+                    <div class="col-md-4 mb-3">
+                      <label for="validationCustomUsername">Usuario</label>
+                      <div class="input-group">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text" id="inputGroupPrepend">@</span>
+                        </div>
+                        <input type="text" class="form-control" id="validationCustomUsername" placeholder="Usuario" aria-describedby="inputGroupPrepend" required>
+                        <div class="invalid-feedback">
+                          Por favor elija otro usuario, este ya está en uso.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                      <label for="validationCustom01">Nombre</label>
+                      <input type="text" class="form-control" id="validationCustom01" placeholder="Ingrese su nombre" value="" required>
+                      <div class="valid-feedback">
+                        Luce bien!
+                      </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                      <label for="validationCustom01">Apellidos</label>
+                      <input type="text" class="form-control" id="validationCustom01" placeholder="Ingrese su apellido" value="" required>
+                      <div class="valid-feedback">
+                        Luce bien!
+                      </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                      <label for="validationCustom02">Correo electrónico</label>
+                      <input type="text" class="form-control" id="validationCustom02" placeholder="Ingrese su correo electrónico" value="" required>
+                      <div class="valid-feedback">
+                        Luce bien!
+                      </div>
+                    </div>
+                    
+                    
+                  </div>
+                  <div class="form-row">
+                    <div class="col-md-6 mb-3">
+                      <label for="validationCustom03">Contraseña</label>
+                      <input type="text" class="form-control" id="validationCustom03" placeholder="Ingrese su contraseña" required>
+                      <div class="invalid-feedback">
+                        Contraseña vacía
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                      <label class="form-check-label" for="invalidCheck">
+                        Aceptar términos y condiciones
+                      </label>
+                      <div class="invalid-feedback">
+                        Debe aceptar los términos y condiciones para continuar.
+                      </div>
+                    </div>
+                  </div>
+                  <button class="btn btn-primary" type="submit">Agregar Usuario</button>
+                </form>
+                
+                <script>
+               
+                </script>
+
+
+
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                <button type="submit" class="btn btn-primary">Guardar Cambios</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--Final del Modal Agregar Usuario-->
+      <!--Inicio del modal Añadir ROL-->
+
+      <section>
+        <div class="modal fade" id="ModalRol" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header" >
+                <h5 class="modal-title" id="exampleModalScrollableTitle">Crear nuevo Rol</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                
+                <form>
+                  <div class="form-group">
+                    <label for="exampleInputEmail1">Rol:</label>
+                    <input type="text" class="form-control" id="exampleInputEmail1"  placeholder="Ingrese el nombre del nuevo rol">
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleFormControlTextarea1">Descripción:</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    <small id="emailHelp" class="form-text text-muted">Ingrese una breve descripción de la utilidad que tendrá este nuevo rol de usuario.</small>
+                  </div>
+                  <button type="submit" class="btn btn-primary boton-Estandar">Agregar Rol</button>
+                </form>
+                               
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary boton-Estandar" data-dismiss="modal">Cerrar</button>
+                <button type="submit" class="btn btn-primary boton-Estandar">Guardar Cambios</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--Fin del modal Añadir ROL-->
+
+      <!--Inicio de tabla que muestra los usuarios agregados-->
+      <div class="container">
+        <div class="row">
+          <div class="container-fluid tablaEstatica">
+            <table class="table  table-bordered ">
+
+              <thead >
+                <tr>
+                  <th scope="col">Usuario</th>
+                  <th scope="col">Nombre</th>
+                  <th scope="col">Rol</th>
+                  <th scope="col">Fecha de Creación</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">@User123</th>
+                  <td>Jimin Maradiaga</td>
+                  <td>Usuario Registrado</td>
+                  <td>15/03/19</td>
+                </tr>
+                <tr>
+                    <th scope="row">@User234</th>
+                    <td>Ricardo Mendoza</td>
+                    <td>Usuario Registrado</td>
+                    <td>25/03/19</td>                </tr>
+                <tr>
+                    <th scope="row">@User345</th>
+                    <td>Jesús Alcerro</td>
+                    <td>Usuario Registrado</td>
+                    <td>30/03/19</td>
+                </tr>
+                <tr>
+                    <th scope="row">@User456</th>
+                    <td>Olga de Tosta</td>
+                    <td>Usuario Registrado</td>
+                    <td>23/01/19</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      
+      <!--Final de tabla que muestra los usuarios agregados-->
   </div>
+
+  <!--Agrega el JS-->
   <script src="js/controlador.js"></script>
 
   <!--Agrega el JQuery-->
