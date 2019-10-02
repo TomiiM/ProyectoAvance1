@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Inicio RhamPage</title>
+    <!--Agrega CSS-->
+    <link rel="stylesheet" href="css/style.css">
+    <!--Agrega Bootstrap-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!--FONT AWESOME-->
+    <script src="https://kit.fontawesome.com/3fe5d540fe.js"></script>
+    <!--Google Font-->
+    <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+</head>
+
+<body id="cuerpo">
+  
+  <div class="container">
+    <header>
+      <!-- Version1   -->
+      <div class="">
+            <div class="vertical-menu fixed-top">
+              <!---->
+              <ul>
+                <li>
+                    <a href="#" class="active navbar-brand border-bottom">RhamPage</a></li>
+                    
+                <li>
+                    
+                    <a  href="multimedia.html" class="textoSidebar" id="multimedia"  onclick="recargar()"><i class="fas fa-photo-video"></i> Multimedia</a></li>
+                <li>
+                    <a href="paginas.html" class="textoSidebar"><i class="fas fa-file"></i> Páginas</a></li>
+                <li>
+                    <a href="posts.html" class="textoSidebar"><i class="fas fa-sticky-note"></i> Posts</a></li>
+                <li>
+                    <a href="comentarios.html" class="textoSidebar"><i class="fas fa-comments"></i> Comentarios</a></li>
+                <li>
+                    <a href="plantillas.html" class="textoSidebar"><i class="fas fa-puzzle-piece"></i> Plantillas</a></li>
+                <li>
+                    <a href="usuarios.html" class="textoSidebar"><i class="fas fa-users"></i> Usuarios</a></li>
+              </ul>
+
+            </div>
+        </div>
+        <div class="">
+          
+          <nav  class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="na">
+            <img src="img/logo8.png" alt="" id="logo-navbar">
+            <a class="navbar-brand" href="index.html">Rhampage</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+                      
+            <div class="collapse navbar-collapse form-inline" id="navbarSupportedContent">
+              <ul class="nav navbar-nav  mr-auto ">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Administrador <span class="sr-only">(current)</span></a>
+                </li>
+
+                 
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <i class="far fa-user"></i>
+                  </a>
+                  
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">Usuario Admin</a>
+                    <a class="dropdown-item" href="#">Editar mi Perfil</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Cerrar Sesión</a>
+                  </div>
+                  
+                </li> 
+              </ul>
+            </div>
+          </nav>
+          
+        </div>      
+      </header>
+      <section>
+        <!--Inicio del Breadcrumb-->
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="#">Home</a></li>
+              <li class="breadcrumb-item"><a href="#">Library</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Data</li>
+            </ol>
+          </nav>
+        <!--Final del Breadcrumb-->
+      </section>
+      <section>
+          
+          <div id="recargarSeccion" class="">
+              <div class="container">
+                  <div class="row">
+                      <h3>¡Bienvenido a RhamPage!</h3>
+                  </div>
+
+                  <div class="row col-lg-4">
+                    <div class="container-fluid subirArchivo">
+                      
+                          <i class="fas fa-plus-square fa-3x"></i>
+                          <a href="paginas.html"><h6 id="crearPagina">Crear nueva página</h6></a> 
+                      
+                    </div>
+
+                  </div>
+              </div>
+          </div>
+      </section>
+  </div>
+  <script src="js/controlador.js"></script>
+
+  <!--Agrega el JQuery-->
+  <script src="js/jquery-3.4.1.min.js"></script>
+
+  <!-- Popper.JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"
+  integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
+  crossorigin="anonymous"></script>
+  <!-- Bootstrap JS -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
+  integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+  crossorigin="anonymous"></script>
+</body>
+
+</html>

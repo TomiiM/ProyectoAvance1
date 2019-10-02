@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Inicio RhamPage</title>
+    <!--Agrega CSS-->
+    <link rel="stylesheet" href="css/style.css">
+    <!--Agrega Bootstrap-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!--FONT AWESOME-->
+    <script src="https://kit.fontawesome.com/3fe5d540fe.js"></script>
+</head>
+
+<body id="cuerpo">
+  
+  <div class="container">
+    <header>
+      <!-- Version1   -->
+      <div class="">
+            <div class="vertical-menu fixed-top">
+              <!---->
+              <ul>
+                  <li>
+                      <a href="#" class="active navbar-brand border-bottom">RhamPage</a></li>
+                      
+                  <li>
+                      
+                      <a  href="multimedia.html" class="textoSidebar" id="multimedia"  onclick="recargar()"><i class="fas fa-photo-video"></i> Multimedia</a></li>
+                  <li>
+                      <a href="paginas.html" class="textoSidebar"><i class="fas fa-file"></i> Páginas</a></li>
+                  <li>
+                      <a href="posts.html" class="textoSidebar"><i class="fas fa-sticky-note"></i> Posts</a></li>
+                  <li>
+                      <a href="comentarios.html" class="textoSidebar"><i class="fas fa-comments"></i> Comentarios</a></li>
+                  <li>
+                      <a href="plantillas.html" class="textoSidebar"><i class="fas fa-puzzle-piece"></i> Plantillas</a></li>
+                  <li>
+                      <a href="usuarios.html" class="textoSidebar"><i class="fas fa-users"></i> Usuarios</a></li>
+                </ul>
+
+            </div>
+        </div>
+        <div class="">
+          
+          <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="na">
+              <img src="img/logo8.png" alt="" id="logo-navbar">
+            <a class="navbar-brand" href="index.html">Rhampage</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+                      
+            <div class="collapse navbar-collapse form-inline" id="navbarSupportedContent">
+              <ul class="nav navbar-nav  mr-auto ">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Administrador <span class="sr-only">(current)</span></a>
+                </li>
+                
+
+                 
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <i class="far fa-user"></i>
+                  </a>
+                  
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">Usuario Admin</a>
+                    <a class="dropdown-item" href="#">Editar mi Perfil</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Cerrar Sesión</a>
+                  </div>
+                  
+                </li> 
+              </ul>
+            </div>
+          </nav>
+          
+        </div>      
+      </header>
+      <section>
+            <div >
+                <nav>
+                      <h3 class="font-weight-bolder">Páginas</h3>
+                </nav>
+            </div>
+        </section>
+      <section>
+        <!--Inicio del Breadcrumb-->
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="#">Inicio</a></li>
+              <li class="breadcrumb-item"><a href="#">Páginas</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Editar</li>
+            </ol>
+          </nav>
+        <!--Final del Breadcrumb-->
+      </section>
+      <section>
+          
+          <div id="recargarSeccion" class="">
+            <div class="row subirArchivo">
+                <button type="button" class="btn " id="" data-toggle="modal" data-target="#ModalPagina">
+                  <i class="fas fa-plus-square fa-3x"></i>  
+                  <h6>Añadir nueva Página</h6>
+               </button>
+            </div>
+              <div class="container-fluid tablaEstatica">
+                <table class="table table-bordered">
+                  <thead >
+                    <tr>
+                      <th scope="col">Nombre de Página</th>
+                      <th scope="col">Tipo de Página</th>
+                      <th scope="col">Creador</th>
+                      <th scope="col">Fecha de actualización</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">Alimentos</th>
+                      <td>Dinámica</td>
+                      <td>Jesús Alcerro</td>
+                      <td>21/04/19</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Ejercicios</th>
+                      <td>Estática</td>
+                      <td>Fredes Torres</td>
+                      <td>01/01/15</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Juegos Infantiles</th>
+                      <td>Dinámica</td>
+                      <td>Olga Meza de Tosta</td>
+                      <td>11/10/18</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+          </div>
+      </section>
+          <!--Inicio del modal Añadir ROL-->
+
+          <section>
+              <div class="modal fade" id="ModalPagina" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header" >
+                        <i class="fas fa-file fa-2x" id="pag"></i>
+                      <h5 class="modal-title" id="exampleModalScrollableTitle">Crear nueva Página</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      
+                      <form>
+                        <div class="form-group" id="ingresarPaginas">
+                          <div class="col-md-4 mb-3">
+                            <input type="text" class="intro" placeholder=" Ingrese el título de su página">
+                          </div>
+                          <div class="col-md-4 mb-3">
+                            <input type="text" class="intro" placeholder=" Ingrese el título del menú">
+                          </div>
+                          <div class="col-md-4 mb-3">
+                            <input type="text" class="intro" placeholder=" Ingrese breve descripción">
+                          </div>
+                          <div class="col-md-4 mb-3">
+                            <input type="text" class="intro" placeholder=" Ingrese sus palabras clave">
+                          </div>
+                          <div class="col-md-4 mb-3">
+                            <input type="text" class="intro" placeholder=" Ingrese el URL">
+                          </div>
+                          <div class="col-md-4 mb-3">
+                    
+                            <label for="">Elija dónde desea crear su nueva página</label>
+                            <div class="form-check">
+                              <input class="form-check-input " type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                              <label class="form-check-label" for="exampleRadios1">Primer Nivel</label>
+                            </div>
+                            <div class="form-check">
+                              <input class="form-check-input " type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                              <label class="form-check-label" for="exampleRadios2">Elegir Página Padre</label>
+                            </div>
+                            <div class="form-check">
+                              <select class="form-control intro">
+                                 <option>Seleccione página</option>
+                              </select>
+                            </div>
+                          </div>  
+                        </div>
+                      </form>
+                                     
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary boton-Estandar" data-dismiss="modal">Cerrar</button>
+                      <a href="paginaNueva.html">
+                        <button type="submit" class="btn btn-primary boton-Estandar"> Agregar Página</button>
+                      </a>                       
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+      
+            <!--Fin del modal Añadir ROL-->
+      
+  </div>
+
+  <script src="js/controlador.js"></script>
+
+  <!--Agrega el JQuery-->
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+  integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+  crossorigin="anonymous"></script>
+  <!-- Popper.JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"
+  integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
+  crossorigin="anonymous"></script>
+  <!-- Bootstrap JS -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
+  integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+  crossorigin="anonymous"></script>
+</body>
+
+</html>

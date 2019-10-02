@@ -1,0 +1,256 @@
+/*INICIO DE ESTILOS PARA INDEX*/
+/*logo de la navbar*/
+#logo-navbar{
+
+  height: 40px;
+  padding: 0px;
+  
+}
+
+
+
+.vertical-menu {
+    width: 150px !important;
+    height: 1000px !important; 
+    background-color: #2a2a2a;    /* Set a width if you like */
+    font-family: 'Quicksand', sans-serif;
+  }
+  
+  ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .vertical-menu li{
+    outline: 1px solid #535353 ;
+    transition: all 1s;
+
+  }
+  .vertical-menu a {
+    background-color: #2a2a2a; 
+    color: white; 
+    display: block; 
+    padding: 5px;
+    padding-top: 10px; 
+    text-decoration: none; 
+  }
+  
+  .vertical-menu a:hover {
+    background-color: #535353; 
+    text-decoration-line: none;
+    /*border-left: 5px solid white; */
+    border-right: 5px solid white;
+    color: #eee;
+  }
+
+  #navbarSupportedContent{
+    margin-left: 65% !important;
+
+  }
+
+  .vertical-menu a.active {
+    background-color: rgb(0, 45, 97); 
+    color: white;
+    width: 100%;
+  }
+
+  hr{
+      background-color: rgb(0, 75, 158);
+      margin-top: 0px;
+      padding-top: 0px;
+      
+  }
+
+ body{
+    padding-top: 80px;
+    padding-left: 150px;
+    font-family: 'Quicksand', sans-serif !important;
+  }
+
+#na{
+  background-color: #1767b7 !important;
+  font-family: 'Quicksand', sans-serif;
+
+}
+/*FINAL DE ESTILOS PARA INDEX*/
+/* INICIO DE ESTILOS PARA MULTIMEDIA*/
+.subirArchivo{
+  color: white;
+  margin-left: 20px !important;
+  margin-bottom: 10px;
+  padding: 5px !important;
+  background-color: #ff9e49;
+  width: 200px;
+  height: 100px;;
+  border-radius: 10px 10px 10px 10px;
+  -moz-border-radius: 10px 10px 10px 10px;
+  -webkit-border-radius: 10px 10px 10px 10px;
+  border: 0px ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+nav h3{
+  color: #1767b7;
+}
+.breadcrumb a:hover{
+  text-decoration: none;
+  color: #C5D5E4;
+}
+
+.breadcrumb a{
+  text-decoration: none;
+  color: black;
+}
+
+.iconoS{
+  padding: 3px;
+}
+
+.subirArchivo i,h6{
+  color: white;
+  
+  margin-top: 0px;
+}
+
+#crearPagina {
+  margin-top: 15px;
+  padding: 10px;
+  font-size: 20px;
+  
+}
+
+.subirArchivo #crearPagina:hover {
+  text-decoration: none;
+  color: white;
+}
+#agregarMultimedia i, label{
+  color: white !important;
+}
+.btn:active {
+border: none !important
+}
+/* FINAL DE ESTILOS PARA MULTIMEDIA*/
+
+/* INICIO DE ESTILOS PARA USUARIOS Y ROLES*/
+h3{
+  padding-left: 30px;
+}
+
+
+.boton-Estandar{
+  background-color: #1767b7 !important;
+  border: none !important;
+}
+
+.boton-Estandar:hover{
+  background-color: #693d10 !important;
+  border: none !important;
+}
+
+.modal-header{
+  background-color: #1767b7;
+  color: white
+}
+
+.modal-body, .modal-footer{
+  background-color: #ff9e49;
+}
+
+.modal-body .objetos #label{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.iconito{
+  color: white;
+}
+
+
+/* FINAL DE ESTILOS PARA  USUARIOS Y ROLES*/
+/* INICIO DE ESTILOS PARA PAGINAS*/
+.intro{
+  width: 400px;
+  margin-top: 5px;
+  /*BORDES*/
+  border-radius: 4px 4px 4px 4px;
+-moz-border-radius: 4px 4px 4px 4px;
+-webkit-border-radius: 4px 4px 4px 4px;
+border: 0px solid #000000;
+}
+#ingresarPaginas input{
+  -webkit-box-shadow: 10px 10px 18px -9px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 18px -9px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 18px -9px rgba(0,0,0,0.75);
+}
+
+.tablaEstatica thead{
+  background-color: #1767b7 !important;
+  color: white;
+}
+
+#ingresarPaginas select{
+  padding: 0px;
+  width: 280px ;
+}
+
+#ingresarPaginas label{
+  color: white;
+  width: 400px;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+}
+
+#pag{
+  padding: 5px;
+}
+
+#ModalPagina h5{
+padding: 5px;
+padding-top: 10px;
+}
+.textoSidebar #i{
+  text-align: center;
+
+}
+
+.textoSidebar .fas{
+  color: #b76717;
+}
+#tituloModal1Multimedia, #tituloModal2Multimedia{
+  padding: 5px;
+}
+/* FINAL DE ESTILOS PARA PAGINAS*/
+/*INICIO DE ESTILOS PARA POSTS*/
+#selecCategoriaPostNuevo{
+  margin-left: 0px !important;
+  align-items: flex-start !important;
+  padding: 0px !important;
+  width: 400px; 
+}
+
+#checkPost{
+  margin-top: 10px;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+}
+/*FINAL DE ESTILOS PARA POSTS*/
+/*INICIO DE ESTILOS PARA COMENTARIOS*/
+#modificarComentario i{
+  color: #1767b7;
+  padding: 3px;
+}
+/*FINAL DE ESTILOS PARA COMENTARIOS*/
+/*INICIO DE ESTILOS PARA PLANTILLAS*/
+/*#plantillas label, .fas{
+  color: #1767b7;
+  padding: 10px;
+  text-align: center;
+  background-color: #eee
+}*/
+/*FINAL DE ESTILOS PARA PLANTILLAS*/
+
+
