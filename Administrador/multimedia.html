@@ -108,11 +108,14 @@
                         </button>
                       
                       </div>
-                      <div class="subirArchivo">
-                        <button type="button" class="btn " data-toggle="modal" data-target="#exampleModalScrollable2">
-                          <i class="iconoS fas fa-folder-plus fa-3x"></i>
-                          <h6>Agregar Carpeta</h6>
-                        </button>
+                      <div class="subirArchivo" id="agregarCarpeta">
+                        <label for="file-upload" class="btn" id="labelCarpeta">
+                            <i class="iconoS fas fa-folder-plus fa-3x"></i> 
+                            <h6> Subir archivo </h6>
+                        </label>
+                        <input id="file-upload" onchange='cambiar()' type="file" style='display: none;'/>
+                        <div id="info"></div>
+
                       </div>
                       
                 </div>
@@ -136,25 +139,39 @@
               </button>
             </div>
             <div class="modal-body" id="agregarMultimedia">
+              <form role="form" onsubmit="cargarImagen()" method="POST">
               <div class="container"> 
                 <div class="row ">  
                   <div class="objetos col-md-4 col-sm-6 ">
-                    <i class="far fa-image fa-5x" ></i> <br>
-                    <label for="" >Subir Imagen</label>
+
+                      <label for="file-upload" class="subir">
+                          <i class="far fa-image fa-5x"></i>Subir Imagen 
+                      </label>
+                      <input id="file-upload" onchange='cambiar()' type="file" style='display: none;'/>
+                      <div id="info"></div>  
                   </div>
+
                   <div class="objetos col-md-4 col-sm-6 ">
-                    <i class="fas fa-video fa-5x"></i> <br>
-                    <label for="">Subir Video</label>    
+                      <label for="file-upload" class="subir">
+                          <i class="fas fa-video fa-5x"></i>Subir Video 
+                      </label>
+                      <input id="file-upload" onchange='cambiar()' type="file" style='display: none;'/>
+                      <div id="info"></div>    
                   </div >
+
                   <div class="objetos col-md-4 col-sm-6 ">
-                    <i class="fas fa-file-upload fa-5x" ></i> <br>
-                    <label for="">Subir archivo externo</label>
+                      <label for="file-upload" class="subir">
+                          <i class="fas fa-file-upload fa-5x"></i> <br> Subir Archivo 
+                      </label>
+                      <input id="file-upload" onchange='cambiar()' type="file" style='display: none;'/>
+                      <div id="info"></div>
+                
                   </div>
                 </div>
               </div>
-                                             
+            </form>                               
                             
-                            
+                   
                     
             </div>
             <div class="modal-footer">
@@ -165,32 +182,8 @@
         </div>
       </div>
     <!--FINAL DE MODAL-->
-    <!-- Modal -->
-    <div class="modal fade" id="exampleModalScrollable2" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-scrollable" role="document">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <i class="far fa-folder fa-2x " ></i>
-                  <h5 class="modal-title" id="tituloModal2Multimedia">Subir Carpeta Multimedia</h5>
-                  
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                  </button>
-                </div>
-                <div class="modal-body">
-                  
-                  <input type="file" class="form-control-file" id="exampleFormControlFile1">
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary boton-Estandar" data-dismiss="modal">Cerrar</button>
-                  <button type="button" class="btn btn-primary boton-Estandar">Guardar Cambios</button>
-                </div>
-              </div>
-            </div>
-          </div>
-        <!--FINAL DE MODAL-->
-  <script src="js/controlador.js"></script>
-
+    
+  <script src="js/multimedia.js"></script>
   <!--Agrega el JQuery-->
   <script src="js/jquery-3.4.1.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -204,6 +197,7 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
   integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
   crossorigin="anonymous"></script>
+  
 </body>
 
 </html>

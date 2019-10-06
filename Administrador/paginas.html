@@ -155,13 +155,13 @@
                     </div>
                     <div class="modal-body">
                       
-                      <form>
+                      <form role="form" >
                         <div class="form-group" id="ingresarPaginas">
                           <div class="col-md-4 mb-3">
-                            <input type="text" class="intro" placeholder=" Ingrese el título de su página">
+                            <input type="text" class="intro" id="tituloPagina" placeholder=" Ingrese el título de su página">
                           </div>
                           <div class="col-md-4 mb-3">
-                            <input type="text" class="intro" placeholder=" Ingrese el título del menú">
+                            <input type="text" class="intro" id="tituloMenu" placeholder=" Ingrese el título del menú">
                           </div>
                           <div class="col-md-4 mb-3">
                             <input type="text" class="intro" placeholder=" Ingrese breve descripción">
@@ -190,15 +190,16 @@
                             </div>
                           </div>  
                         </div>
-                      </form>
+                     
                                      
                     </div>
                     <div class="modal-footer">
                       <button type="button" class="btn btn-secondary boton-Estandar" data-dismiss="modal">Cerrar</button>
                       <a href="paginaNueva.html">
-                        <button type="submit" class="btn btn-primary boton-Estandar"> Agregar Página</button>
+                        <button type="submit" class="btn btn-primary boton-Estandar" onclick="guardarPagina()" > Agregar Página</button>
                       </a>                       
                     </div>
+                    </form>
                   </div>
                 </div>
               </div>
@@ -207,8 +208,8 @@
             <!--Fin del modal Añadir ROL-->
       
   </div>
-
-  <script src="js/controlador.js"></script>
+ <script src="js/paginas.js"></script>
+  
 
   <!--Agrega el JQuery-->
   <script src="js/jquery-3.4.1.min.js"></script>
@@ -223,6 +224,7 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
   integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
   crossorigin="anonymous"></script>
+ 
 </body>
 
 </html>

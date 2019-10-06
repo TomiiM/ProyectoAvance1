@@ -56,12 +56,12 @@
 }
 
 #registrar{
-    background-color: #717377;
+    background-color: #ff9e49;
     border: 0px;
     color: white;
     font-weight: bold;
     margin-bottom: 10px;
-    margin-left: 300px;;
+    /*margin-left: 300px;;*/
 }
 
 .cuerpo{
@@ -91,6 +91,14 @@
     text-align: center;
     color: white
 }
+
+#enlaceLogin{
+    color:white;    
+}
+#enlaceLogin a{
+    color: white;
+}
+
 #segundo a{
     color: white;
  /*    text-decoration: none !important;*/
@@ -118,7 +126,7 @@
     
 
     width: 450px;
-    height: 520px;
+    height: 80%;
 
     border-radius: 19px 19px 19px 19px;
     -moz-border-radius: 19px 19px 19px 19px;

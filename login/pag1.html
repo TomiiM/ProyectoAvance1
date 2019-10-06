@@ -11,19 +11,21 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
 </head>
 <body class="cuerpo">
-
-    <div  id="centro">
-        <div class="container-fluid col-sm-12 col-lg-12">
-            <img src="img/logo8.png" id="logo" alt="">
-            <h1 id="" class="form-text titulo">Inicia Sesión</h1> <br>
-            <input class="form-control logearse" type="text" name="" id="usuario" placeholder="Ingresa tu correo"> <br>
-            <input class="form-control logearse" type="password" name="" id="clave" placeholder="Ingresa tu contraseña"> <br>
-            <button class="form-control logearse" id="acceder" onclick="verificar()">Acceder</button>
-        </div>    
-    </div> 
-    <div id="segundo" class="container-fluid col-sm-12 col-lg-12">
-        <p>¿No tienes una cuenta? <a href="registro.html">Regístrate</a></p> 
-    </div>
+    <form action="/login/pag1.html" method="post">
+        <div class="form-group"  id="centro">
+            <div class="container-fluid col-sm-12 col-lg-12">
+                <img src="img/logo8.png" id="logo" alt="">
+                <h1 id="" class="form-text titulo">Inicia Sesión</h1> <br>
+                <input class="form-control logearse" type="text" name="" id="usuario" placeholder="Ingresa tu correo"> <br>
+                <input class="form-control logearse" type="password" name="" id="clave" placeholder="Ingresa tu contraseña"> <br>
+                <input type="submit" class="form-control logearse" id="acceder" onclick="verificar()">                                                                      
+            </div>    
+        </div> 
+        <div id="segundo" class="container-fluid col-sm-12 col-lg-12">
+            <p>¿No tienes una cuenta? <a href="registro.html"> <b>Regístrate</b> </a></p> 
+        </div>
+    </form>
+    
 
     <!--Agrega el JS-->
     <script src="js/controlador.js"></script>

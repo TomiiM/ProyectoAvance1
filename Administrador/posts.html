@@ -181,14 +181,7 @@
                           <input type="text" class="intro" placeholder=" Ingrese el título de su Post">
                         </div>
                         <div class="col-md-4 mb-3">
-                          <input type="text" class="intro" placeholder=" Ingrese el Contenido de su Post">
-                        </div>
-                        <div class="col-md-4 mb-3">
-                          <label for="">Suba su imagen</label>
-                          <input type="file" class="form-control-file" id="exampleFormControlFile1">
-                        </div>
-                        <div class="col-md-4 mb-3">
-                          <input type="text" class="intro" placeholder=" Elija su Categoria">
+                          <textarea type="text" class="intro" style="color:gray">Ingrese el Contenido de su Post </textarea>
                         </div>
                         <div class="col-md-4 mb-3">
                           <input type="text" class="intro" placeholder=" Ingrese el URL">
@@ -201,16 +194,27 @@
                                <option value="">Categoria1</option>
                                <option value="">Categoria2</option>
                             </select>
-                          </div>
-                          <label id="checkPost" for="">Comentarios</label>
-                          <div class="form-check">
-                            <input class="form-check-input " type="radio" name="exampleRadios" id="exampleRadios1" value="option1" >
-                            <label class="form-check-label" for="exampleRadios1">Habilitados</label><br>
-                            <input class="form-check-input " type="radio" name="exampleRadios" id="exampleRadios1" value="option2" >
-                            <label class="form-check-label" for="exampleRadios1">No disponibles</label>
-                          </div>
-                          
+                          </div>     
                         </div>  
+
+                        <div class="row">
+                            <div class="col-sm-12 col-md-6">
+                              <label id="checkPost" for="">Comentarios</label>
+                                <div class="form-check">
+                                  <input class="form-check-input " type="radio" name="exampleRadios" id="exampleRadios1" value="option1" >
+                                  <label class="form-check-label" for="exampleRadios1">Habilitados</label><br>
+                                  <input class="form-check-input " type="radio" name="exampleRadios" id="exampleRadios1" value="option2" >
+                                  <label class="form-check-label" for="exampleRadios1">No disponibles</label>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="file-upload" class="subir">
+                                    <i class="far fa-image fa-3x"></i> <br> Subir Imagen 
+                                </label>
+                                <input id="file-upload" onchange='cambiar()' type="file" style='display: none;'/>
+                                <div id="info"></div>
+                            </div>
+                          </div>
                       </div>
                     </form>             
                       
@@ -258,7 +262,7 @@
             <!--FINAL DE CATEGORIA-->
       
   </div>
-  <script src="js/controlador.js"></script>
+  <script src="js/posts.js"></script>
 
   <!--Agrega el JQuery-->
   <script src="js/jquery-3.4.1.min.js"></script>

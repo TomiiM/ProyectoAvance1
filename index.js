@@ -2,10 +2,32 @@ var express = require("express");
 var database = require("./modules/database");
 //var usuariosRouter = require("./routers/usuarios-router");
 var app = express();
+var mongoose= require('mongoose');
+var passport = require('passport');
+var flash= require('connect-flash');
+var bodyParser = require('body-parser');
+var session = require('express-session');
 
-app.use(express.static("Administrador"));
 //app.use('/usuarios',usuariosRouter);
 
+
+//configurando passport para luego implementarlo
+//require('./passport')(passport);
+
+//Middleware
+app.use(bodyParser.urlencoded());
+app.use(session({
+    secret: 'rhampage',
+    resave:false,
+    saveUninitialized: false
+}));
+app.use(passport.initialize());
+app.use(passport.session());
+app.use(flash());
+
+//Routes
+require('./routers')(app, passport);
+app.use(express.static("Administrador"));
 
 app.get('/', (req, res) => {
     res.render('index');

@@ -12,43 +12,33 @@
 
 </head>
 <body class="cuerpo">
-    <div id="contiene" class="col-sm-12 col-lg-12">
-        <form class="needs-validation" novalidate>
-            <div class="form-row">
+    <div id="contiene" class="col-sm-12 col-lg-12 ">
+        <form action="/login/registro.html" class="needs-validation" novalidate method="POST">
+            <div class="form-row form-group">
                 <div class="titulo">
                     <h1 >Regístrate</h1>
                     <h3>¡Sé parte de nuestro equipo!</h3>
                 </div>
             
-              <div class="col-md-12">
+              <div class="col-md-12 form-group">
                 <label for="validationCustom01">Nombre</label>
                 <input type="text" class="form-control" id="validationCustom01" placeholder="Ingrese su nombre"  required>
+                <div class="invalid-feedback">
+                  Por favor ingrese su nombre
+                </div>
                 <div class="valid-feedback">
                   Aceptado!
                 </div>
               </div>
-              <div class="col-md-12">
-                <label for="validationCustom02">Apellidos</label>
-                <input type="text" class="form-control" id="validationCustom02" placeholder="Ingrese su apellido"  required>
-                <div class="valid-feedback">
-                  Luce bien!
-                </div>
-              </div>
-              <div class="col-md-12">
-                <label for="validationCustomUsername">Usuario</label>
-                <div class="input-group">
-                  <div class="input-group-prepend">
-                    <span class="input-group-text" id="inputGroupPrepend">@</span>
-                  </div>
-                  <input type="text" class="form-control" id="validationCustomUsername" placeholder="Usuario" aria-describedby="inputGroupPrepend" required>
-                  <div class="invalid-feedback">
-                   Por favor elija un usuario válido.
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-12">
+              <div class="col-md-12 form-group ">
                 <label for="validationCustom02">Correo electrónico</label>
                 <input type="text" class="form-control" id="validationCustom02" placeholder="Ingrese su correo electrónico" value="" required>
+                
+                <div class="invalid-feedback">
+                  Por favor ingrese un correo electrónico válido
+                </div>
+                
+                
                 <div class="valid-feedback">
                   Luce bien!
                 </div>
@@ -78,10 +68,13 @@
                 </div>
               </div>
             </div>
-            <button class="btn btn-primary" id="registrar" type="submit" >Registrarse</button>
+            <input type="submit" class="form-control logearse" id="registrar" type="submit" >
+
           </form>
-          
-          
+          <div id="enlaceLogin" class="container-fluid col-sm-12 col-lg-12 text-center">
+            <p>¿Ya tienes una cuenta? <a href="pag1.html"> <b>Inicio</b> </a></p> 
+        </div>
     </div>   
+    <script src="./js/controlador.js"></script>
 </body>
 </html>
