@@ -71,11 +71,16 @@ h6{
     border: #b76717 !important;
     margin-left: 20px;
     width: 500px;
+    
   }
-  
+  #boton-Descarga a{
+      color: white !important;
+    text-decoration: none;
+  }
   #boton-Descarga:hover{
     background-color: #693d10 !important;
     border: #693d10 !important;
+    text-decoration: none;
   }
 
 .definicion{
