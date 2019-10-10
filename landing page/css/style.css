@@ -3,6 +3,10 @@
     background-image: url('../imagenes/f1.jpg');
     height: 800px;;
 }
+#tituloSecundario{
+    background-color: #693d10;
+    color: white;
+}
 #logo{
         /*margin-left: 40%;*/
         height: 550px;
@@ -74,5 +78,18 @@ h6{
     border: #693d10 !important;
   }
 
+.definicion{
+    padding: 5px 10px;
+    background-color: #fd8e2d   ;
+    color:#fff;
+    border:1px solid #fff;
+    cursor: pointer; 
+    justify-content: justify !important;
+    align-items: center;
+}  
+
+.definicion i{
+    margin-left: 40%;
+}
 
 

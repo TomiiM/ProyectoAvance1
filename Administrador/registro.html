@@ -12,8 +12,8 @@
 
 </head>
 <body class="cuerpo">
-    <div id="contiene" class="col-sm-12 col-lg-12 "> 
-        <form action="/Administrador/registro.html" class="needs-validation" novalidate method="POST">
+    <div id="contiene" class="col-sm-12 col-lg-12 ">
+        <form action="/registro.html" class="needs-validation" novalidate method="POST">
             <div class="form-row form-group">
                 <div class="titulo">
                     <h1 >Regístrate</h1>
@@ -22,7 +22,7 @@
             
               <div class="col-md-12 form-group">
                 <label for="validationCustom01">Nombre</label>
-                <input type="text" name="email" class="form-control" id="validationCustom01" placeholder="Ingrese su nombre"  required>
+                <input type="text" class="form-control" id="validationCustom01" placeholder="Ingrese su nombre"  required>
                 <div class="invalid-feedback">
                   Por favor ingrese su nombre
                 </div>
@@ -32,7 +32,7 @@
               </div>
               <div class="col-md-12 form-group ">
                 <label for="validationCustom02">Correo electrónico</label>
-                <input type="text" name="password" class="form-control" id="validationCustom02" placeholder="Ingrese su correo electrónico" value="" required>
+                <input type="email" class="form-control" id="validationCustom02" placeholder="Ingrese su correo electrónico" value="" required>
                 
                 <div class="invalid-feedback">
                   Por favor ingrese un correo electrónico válido
@@ -49,7 +49,7 @@
             <div class="form-row">
               <div class="col-md-6 mb-3">
                 <label for="validationCustom03">Contraseña</label>
-                <input type="text" class="form-control" id="validationCustom03" placeholder="Ingrese su contraseña" required>
+                <input type="password" class="form-control" id="validationCustom03" placeholder="Ingrese su contraseña" required>
                 <div class="invalid-feedback">
                   Contraseña vacía
                 </div>
@@ -75,6 +75,6 @@
             <p>¿Ya tienes una cuenta? <a href="pag1.html"> <b>Inicio</b> </a></p> 
         </div>
     </div>   
-    <script src="./js/controladorLogin.js"></script>
+    <script src="./js/controladorLogin.js"></script> 
 </body>
 </html>

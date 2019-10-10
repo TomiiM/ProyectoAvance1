@@ -1,17 +1,24 @@
-module.exports= (app,passport) => {
-    app.get('/pagina1',(req, res) => {
-        res.render('pagina1')
-    }); 
-    
-    app.post('/pagina1',(req, res)=>{});
-    
-    app.get('registro', (req, res)=>{
-        res.render('registro', {
-            message: req.flash('registroMensaje')
-        })
-    });
+var router = require('express').Router();
+var passport = require('passport');
 
-    app.post('/registro',(req, res)=>{});
-};
+router.get('/pag1',(req, res, next) => {
+    res.render('pag1')
+}); 
+
+router.post('/pag1',(req, res, next) => {
+    console.log(req.body);
+    res.render('pag1')
+}); 
+
+router.get('/registro',(req, res, next) => {
+    res.render('registro');
+});
+
+router.post('/registro', passport.authenticate('local-signup',{
+    successRedirect:'/pag1',
+    failureRedirect: '/registro',
+    passReqToCallback: true
+}));
 
 
+module.exports = router;
